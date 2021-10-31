@@ -53,9 +53,12 @@ Dùng hàm *gets* (từ VS 2015 dùng C++ 11 nên dùng *gets_s*). Cú pháp (th
 		where the string read is copied as a C string.
 
 Vd code:
+
 	char nick_name[];
 	gets (nick_name);
+	
 **Sai ở đâu:**
+
 Đoạn code sau sẽ báo lỗi:
 	
 	char * str;
@@ -72,11 +75,11 @@ Trả lời: Vì theo cú pháp thì tham số của hàm gets phải là 1 con 
 
 	Nếu khai báo:
 
-		**char** str[20] = "Moving";
+		char str[20] = "Moving";
 	
-	thì gọi **strlen(str)** sẽ trả về 6.
+	thì gọi strlen(str) sẽ trả về 6.
 
-** char *strcat(char *dest, const char *src); **
+**char *strcat(char *dest, const char *src); **
 	
 	Ghép chuỗi **src** vào chuỗi **dest** và trả về con trỏ đến chuỗi **dest**. Chuỗi **dest** phải có đủ chỗ (kể cả ký tự kết thúc chuỗi) để thêm **src** vào.
 
