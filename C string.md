@@ -71,7 +71,7 @@ Trả lời: Vì theo cú pháp thì tham số của hàm gets phải là 1 con 
 
 ### Hàm thao tác trên chuỗi kí tự C:
 
-**int strlen(const char *s); **
+**int strlen(const char *s);**
 
 	Nếu khai báo:
 
