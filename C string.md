@@ -81,7 +81,7 @@ Trả lời: Vì theo cú pháp thì tham số của hàm gets phải là 1 con 
 
 2. char *strcat(char *dest, const char *src);
 
-Ghép chuỗi **src** vào chuỗi **dest** và trả về con trỏ đến chuỗi **dest**. Chuỗi **dest** phải có đủ chỗ (kể cả ký tự kết thúc chuỗi) để thêm **src** vào.
+	Ghép chuỗi **src** vào chuỗi **dest** và trả về con trỏ đến chuỗi **dest**. Chuỗi **dest** phải có đủ chỗ (kể cả ký tự kết thúc 	chuỗi) để thêm **src** vào.
 
 3. char *strcpy(char *dest, const char *src);
 
@@ -89,9 +89,11 @@ Ghép chuỗi **src** vào chuỗi **dest** và trả về con trỏ đến chu�
 	
 4. int strcmp(const char *s1, const char *s2);
 
-	So sánh theo thứ tự alphabet (dựa vào ASCII). Trả về âm nếu **s1** < **s2**; 0 nếu **s1** khớp **s2**; dương nếu **s1** > **s2**. Hàm **int strncmp (const char *s1, const char *s2, size_t n);** có chức năng tương tự nhưng tới n ký tự.
+	So sánh theo thứ tự alphabet (dựa vào ASCII). Trả về âm nếu **s1** < **s2**; 0 nếu **s1** khớp **s2**; dương nếu **s1** > **s2**. Hàm int strncmp (const char *s1, const char *s2, size_t n); có chức năng tương tự nhưng tới n ký tự.
 	
-5. 
+5. const char * strchr(const char *s1, const char *s2);
+
+	Tìm xem ký tự lưu trong biến 
 
 #### Reference:
 	1. daynhauhoc
