@@ -65,6 +65,22 @@ Vd code:
 Trả lời: Vì theo cú pháp thì tham số của hàm gets phải là 1 con trỏ trỏ tới 1 khối bộ nhớ (mảng của chuỗi), mà đoạn code trên khởi tạo str là con trỏ char, lỗi có thể thuộc 1 trong 2 trường hợp sau: 
 - TH1: 1 là str là 1 con trỏ **NULL**, chưa trỏ tới vùng nhớ nào.
 - TH2: vì str là biến con trỏ char (char*) nên hàm hiểu nó là con trỏ chứ không phải mảng của chuỗi.  
+
+### Hàm thao tác trên chuỗi kí tự C:
+
+**int strlen(const char *s); **
+
+	Nếu khai báo:
+
+		**char** str[20] = "Moving";
+	
+	thì gọi **strlen(str)** sẽ trả về 6.
+
+** char *strcat(char *dest, const char *src); **
+	
+	Ghép chuỗi **src** vào chuỗi **dest** và trả về con trỏ đến chuỗi **dest**. Chuỗi **dest** phải có đủ chỗ (kể cả ký tự kết thúc chuỗi) để thêm **src** vào.
+
+
 #### Reference:
 	1. daynhauhoc
 	2. cppreference
