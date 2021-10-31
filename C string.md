@@ -64,7 +64,7 @@ Vd code:
 
 Trả lời: Vì theo cú pháp thì tham số của hàm gets phải là 1 con trỏ trỏ tới 1 khối bộ nhớ (mảng của chuỗi), mà đoạn code trên khởi tạo str là con trỏ char, lỗi có thể thuộc 1 trong 2 trường hợp sau: 
 - TH1: 1 là str là 1 con trỏ **NULL**, chưa trỏ tới vùng nhớ nào.
-- TH2: vì str là biến con trỏ char (char*) nên hàm hiểu nó là con trỏ chứ không phải mảng của chuỗi  
+- TH2: vì str là biến con trỏ char (char*) nên hàm hiểu nó là con trỏ chứ không phải mảng của chuỗi.  
 #### Reference:
 	1. daynhauhoc
 	2. cppreference
