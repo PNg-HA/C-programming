@@ -69,9 +69,9 @@ Trả lời: Vì theo cú pháp thì tham số của hàm gets phải là 1 con 
 - TH1: 1 là str là 1 con trỏ **NULL**, chưa trỏ tới vùng nhớ nào.
 - TH2: vì str là biến con trỏ char (char*) nên hàm hiểu nó là con trỏ chứ không phải mảng của chuỗi.  
 
-### Hàm thao tác trên chuỗi kí tự C:
+#### Hàm thao tác trên chuỗi kí tự C:
 
-**int strlen(const char *s);**
+1. int strlen(const char *s);
 
 	Nếu khai báo:
 
@@ -79,10 +79,19 @@ Trả lời: Vì theo cú pháp thì tham số của hàm gets phải là 1 con 
 	
 	thì gọi strlen(str) sẽ trả về 6.
 
-**char *strcat(char *dest, const char *src); **
-	
-	Ghép chuỗi **src** vào chuỗi **dest** và trả về con trỏ đến chuỗi **dest**. Chuỗi **dest** phải có đủ chỗ (kể cả ký tự kết thúc chuỗi) để thêm **src** vào.
+2. char *strcat(char *dest, const char *src);
 
+Ghép chuỗi **src** vào chuỗi **dest** và trả về con trỏ đến chuỗi **dest**. Chuỗi **dest** phải có đủ chỗ (kể cả ký tự kết thúc chuỗi) để thêm **src** vào.
+
+3. char *strcpy(char *dest, const char *src);
+
+	Chép chuỗi **src** chồng lên chuỗi **dest** và trả về con trỏ đến chuỗi **dest**. Chuỗi **dest** phải có đủ chỗ (kể cả ký tự kết thúc chuỗi) để chép **src** vào.
+	
+4. int strcmp(const char *s1, const char *s2);
+
+	So sánh theo thứ tự alphabet (dựa vào ASCII). Trả về âm nếu **s1** < **s2**; 0 nếu **s1** khớp **s2**; dương nếu **s1** > **s2**. Hàm **int strncmp (const char *s1, const char *s2, size_t n);** có chức năng tương tự nhưng tới n ký tự.
+	
+5. 
 
 #### Reference:
 	1. daynhauhoc
